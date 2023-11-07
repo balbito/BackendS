@@ -1,0 +1,29 @@
+[
+	{
+		"title": "Hamburguesa 2",
+		"description": "Hamburguesa con bacon",
+		"price": 5000,
+		"thumbnail": "🍔",
+		"code": "abc124",
+		"stock": 15,
+		"id": 2
+	},
+	{
+		"title": "Hamburguesa 3",
+		"description": "Hamburguesa con cheddar y bacon",
+		"price": 6000,
+		"thumbnail": "🍔",
+		"code": "abc125",
+		"stock": 20,
+		"id": 3
+	},
+	{
+		"title": "Hamburguesa 4",
+		"description": "Hamburguesa con cebolla caramelizada",
+		"price": 3000,
+		"thumbnail": "🍔",
+		"code": "abc126",
+		"stock": 5,
+		"id": 4
+	}
+]
