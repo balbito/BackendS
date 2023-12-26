@@ -1,0 +1,16 @@
+<div>
+    {{#if isAdmin}}
+    Bienvenido admin
+     {{#each food}}
+      <div>
+        {{!-- como le pase un array this hace referencia a lo que contiene el array  --}}
+        <p> {{ this.name }}</p>
+        <p> {{ this.price }}</p> 
+      </div>
+     {{/each}}
+
+     {{else}}
+      <p>No tenes acceso</p>
+
+    {{/if}}
+</div>

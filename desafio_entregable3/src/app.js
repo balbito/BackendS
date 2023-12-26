@@ -2,7 +2,8 @@ import express from "express";
 import ProductManager from "./ProductManager.js";
 
 const app = express();
-const PORT = 8080;
+const PORT = 5000;
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const ProductManagerOnline = new ProductManager("./src/products.json");
@@ -11,7 +12,7 @@ app.get("/products", async (req, res) => {
     try {
         const { limit } = req.query;
         const products = await ProductManagerOnline.getProducts();
-
+        console.log(products)
         let responseProducts = products;
 
         if (limit && limit <= 5) {
